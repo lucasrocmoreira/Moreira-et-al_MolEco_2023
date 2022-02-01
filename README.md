@@ -28,6 +28,11 @@ Code used for analyses in Moreira et al. 2022:
 
 * `IQ-TREE_POMO.sh`: builds a maximum likelihood tree based on the polymorphism-aware phylogenetic model (PoMo) implemented in [IQ-Tree 2](http://www.iqtree.org/).
 
+* `NGSadmix.sh`: estimates admixture proportions with [NGSadmix](http://www.popgen.dk/software/index.php/NgsAdmix).
+
+* `NGSadmix_plot.R`: plots admixture proportions.
+
+
 ### Demographic inference
 
 ### Genetic diversity, recombination rates, and linkage disequilibrium
