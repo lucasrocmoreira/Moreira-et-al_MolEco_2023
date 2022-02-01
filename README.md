@@ -32,6 +32,7 @@ Code used for analyses in Moreira et al. 2022:
 
 * `NGSadmix_plot.R`: plots admixture proportions.
 
+* `EEMS.sh`: calculates estimated effective migration surface ([EEMS](https://github.com/dipetkov/eems)). **Note**: the folder `EEMS_par_file` contains the parameter file used.
 
 ### Demographic inference
 
