@@ -26,7 +26,8 @@ Code used for analyses in Moreira et al. 2022:
 
 * `SNPRelate.R`: performs principal component analysis (PCA) using the R package [SNPRelate](https://www.bioconductor.org/packages/release/bioc/html/SNPRelate.html).
 
-* : builds a maximum likelihood tree based on the polymorphism-aware phylogenetic model (PoMo) implemented in [IQ-Tree 2](http://www.iqtree.org/)
+* `iqtree_POMO.sh`: builds a maximum likelihood tree based on the polymorphism-aware phylogenetic model (PoMo) implemented in [IQ-Tree 2](http://www.iqtree.org/).
+
 ### Demographic inference
 
 ### Genetic diversity, recombination rates, and linkage disequilibrium
