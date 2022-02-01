@@ -46,6 +46,8 @@ Code used for analyses in Moreira et al. 2022:
 
 * `ANGSD_Theta.sh`: estimates genetic diversity (theta) using [ANGSD](http://www.popgen.dk/angsd/index.php/ANGSD).
 
+* `PopLDdecay.sh`: estimates linkage decay with [PopLDdecay](https://github.com/BGI-shenzhen/PopLDdecay).
+
 ### Genomic predictors of regional variation in nucleotide diversity
 
 ### Natural selection and genetic load
