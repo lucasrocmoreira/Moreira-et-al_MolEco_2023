@@ -38,7 +38,9 @@ Code used for analyses in Moreira et al. 2022:
 
 * `Fastsimcoal.sh`: runs demographic models with [fastsimcoal2](http://cmpg.unibe.ch/software/fastsimcoal27/). **Note**: parameter files are prodived in folder `fastsimcoal2`.
 
-* `Stairwayplot2.sh`: performs demographic inference using [Stairway Plot 2](https://github.com/xiaoming-liu/stairway-plot-v2). **Note**: blueprint files provided in folder `stairwayplot2_bluprints`
+* `Stairwayplot2.sh`: performs demographic inference using [Stairway Plot 2](https://github.com/xiaoming-liu/stairway-plot-v2). **Note**: blueprint files provided in folder `stairwayplot2_bluprints`.
+
+* `Stairwayplot2_plot.R`: plots results from [Stairway Plot 2](https://github.com/xiaoming-liu/stairway-plot-v2).
 
 ### Genetic diversity, recombination rates, and linkage disequilibrium
 
