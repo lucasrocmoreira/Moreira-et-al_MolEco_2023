@@ -16,7 +16,7 @@ Code used for analyses in Moreira et al. 2022:
 
 * `GATK_SNP_GVCF.sh`: jointly calls genotypes across all samples using [GATK GenotypeGVCFs](https://gatk.broadinstitute.org/hc/en-us).
 
-* `SNP_select_variants-25missingdata.sh`: filters SNPs from vcf file using [vcftools](http://vcftools.sourceforge.net/).
+* `SNP_select_variants-25missingdata.sh`: filters SNPs from vcf file using [VCFtools](http://vcftools.sourceforge.net/).
 
 * `ANGSD_GL.sh`: estimates genotype likelihood from BAM files using [ANGSD](http://www.popgen.dk/angsd/index.php/ANGSD).
 
