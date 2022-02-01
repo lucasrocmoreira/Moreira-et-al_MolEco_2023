@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Spyder Editor
 
-This is a temporary script file.
-"""
 import os # used for working with file paths
 import csv
 from Bio.Phylo.PAML import codeml
