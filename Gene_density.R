@@ -1,8 +1,7 @@
 ## Made by Lucas R. Moreira
 ## Last updated 12 April 2020
-## Usage: Calculates gene density along speficied sliding windows
+## Usage: Calculates gene density along specified sliding windows
 
-#size_of_genome <- read.table("pseudochromosomes-subset_sorted.fasta.size_of_genome.txt",header=F)
 size_of_genome <- read.table("pseudochromosomes-subset_sorted.fasta.size_of_genome.txt",header=F)
 
 bed <- read.table("Picoides_pubescens.pseudogenome.cds.bed",sep="\t",header=F)
