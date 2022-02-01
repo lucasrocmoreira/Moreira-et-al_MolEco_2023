@@ -18,7 +18,7 @@ Code used for analyses in Moreira et al. 2022:
 
 ### Population structure
 
-* `ANGSD_FST.sh`: estimates pariwise global and window-based FST using [ANGSD](http://www.popgen.dk/angsd/index.php/ANGSD). 
+* `ANGSD_FST.sh`: estimates pairwise global and window-based FST using [ANGSD](http://www.popgen.dk/angsd/index.php/ANGSD). 
 
 ### Demographic inference
 
