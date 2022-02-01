@@ -15,7 +15,6 @@ export PATH=./:$PATH
 echo $PATH
 
 # Convert to iqtree POMO format
-
 FastaToCounts.py SNP-only.fasta SNP-only.cf --iupac
 
 iqtree -s SNP-only.cf -m HKY+P -b 100 -nt 16
