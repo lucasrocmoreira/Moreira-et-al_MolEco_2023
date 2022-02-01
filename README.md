@@ -4,7 +4,7 @@ Code used for analyses in Moreira et al. 2022:
 
 ### Read alignment, variant calling, and filtering
 
-* `Chromosemble.sh`: maps the scaffolds of the *Picoides pubescens* genome onto the Zebra finch chromosomes using [Satsuma Chromosemble](http://satsuma.sourceforge.net/), generating a pseudochromosome reference.
+* `Chromosemble.sh`: maps the scaffolds of the *Dryobates pubescens* genome onto the Zebra finch chromosomes using [Satsuma Chromosemble](http://satsuma.sourceforge.net/), generating a pseudochromosome reference.
 
 * `BWA_alignment.sh`: trims adaptors from raw reads with [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic), assesses quality of reads with [FastaQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/), aligns them to the genome reference using [BWA](http://bio-bwa.sourceforge.net/), converts SAM file to sorted BAM format, adds read group information, marks PCR/optical duplicated reads, and collects alignmnet QC metrics using [Picard](https://broadinstitute.github.io/picard/) and [QualiMap](http://qualimap.conesalab.org/).
 
