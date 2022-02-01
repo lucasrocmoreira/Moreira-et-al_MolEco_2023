@@ -36,6 +36,8 @@ Code used for analyses in Moreira et al. 2022:
 
 ### Demographic inference
 
+* `Fastsimcoal.sh`: runs demographic models with [fastsimcoal2](http://cmpg.unibe.ch/software/fastsimcoal27/). **Note**: parameter files are prodived in folder `fastsimcoal2`.
+
 ### Genetic diversity, recombination rates, and linkage disequilibrium
 
 * `ANGSD_Theta.sh`: estimates genetic diversity (theta) using [ANGSD](http://www.popgen.dk/angsd/index.php/ANGSD).
