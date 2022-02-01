@@ -36,7 +36,7 @@ Code used for analyses in Moreira et al. 2022:
 
 ### Demographic inference
 
-* `Fastsimcoal.sh`: runs demographic models with [fastsimcoal2](http://cmpg.unibe.ch/software/fastsimcoal27/). **Note**: parameter files are prodived in folder `fastsimcoal2_par`.
+* `Fastsimcoal.sh`: runs demographic models with [fastsimcoal2](http://cmpg.unibe.ch/software/fastsimcoal27/). **Note**: parameter files are prodived in folder `fastsimcoal2`.
 
 * `Stairwayplot2.sh`: performs demographic inference using [Stairway Plot 2](https://github.com/xiaoming-liu/stairway-plot-v2). **Note**: blueprint files provided in folder `stairwayplot2_bluprints`
 
