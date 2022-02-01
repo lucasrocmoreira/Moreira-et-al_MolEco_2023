@@ -45,3 +45,27 @@ echo "#########################"
 echo
 
 NGSadmix -likes /home/lmoreira/Picoides_pubescens/SNP_calling_from_pseudochrom/ANGSD/Picoides-pubescens_clean.beagle.gz -K 4 -P 32 -outfiles K4.Picoides_pubescens_NGSadmix.qopt -minMaf 0.05 -minInd 50
+
+echo
+echo "#########################"
+echo K = 5
+echo "#########################"
+echo
+
+NGSadmix -likes /home/lmoreira/Picoides_pubescens/SNP_calling_from_pseudochrom/ANGSD/Picoides-pubescens_clean.beagle.gz -K 5 -P 32 -outfiles K5.Picoides_pubescens_NGSadmix.qopt -minMaf 0.05 -minInd 50
+
+echo
+echo "#########################"
+echo K = 6
+echo "#########################"
+echo
+
+NGSadmix -likes /home/lmoreira/Picoides_pubescens/SNP_calling_from_pseudochrom/ANGSD/Picoides-pubescens_clean.beagle.gz -K 6 -P 32 -outfiles K6.Picoides_pubescens_NGSadmix.qopt -minMaf 0.05 -minInd 50
+
+echo
+echo "#########################"
+echo K = 7
+echo "#########################"
+echo
+
+NGSadmix -likes /home/lmoreira/Picoides_pubescens/SNP_calling_from_pseudochrom/ANGSD/Picoides-pubescens_clean.beagle.gz -K 7 -P 32 -outfiles K7.Picoides_pubescens_NGSadmix.qopt -minMaf 0.05 -minInd 50
