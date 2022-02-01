@@ -24,7 +24,7 @@ Code used for analyses in Moreira et al. 2022:
 
 * `ANGSD_FST.sh`: estimates pairwise global and window-based FST using [ANGSD](http://www.popgen.dk/angsd/index.php/ANGSD).
 
-* `SNPRelate.R`: performs principal component analysis (PCA using the R package [SNPRelate](https://www.bioconductor.org/packages/release/bioc/html/SNPRelate.html).
+* `SNPRelate.R`: performs principal component analysis (PCA) using the R package [SNPRelate](https://www.bioconductor.org/packages/release/bioc/html/SNPRelate.html).
 
 ### Demographic inference
 
