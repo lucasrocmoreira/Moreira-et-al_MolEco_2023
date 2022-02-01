@@ -282,7 +282,7 @@ plot(dat$IBS0, dat$kinship, xlab="Proportion of Zero IBS",
 
 #=======================================================================================================================================#
 #Identity-By-State Analysis
-#   For the nn individuals in a sample, snpgdsIBS() can be used to create a n×nn×n matrix of genome-wide average IBS pairwise identities
+#   For the nn individuals in a sample, snpgdsIBS() can be used to create a nÃ—nnÃ—n matrix of genome-wide average IBS pairwise identities
 #=======================================================================================================================================#
 
 ibs <- snpgdsIBS(genofile, snp.id=snpset.id, autosome.only=FALSE, num.thread=2)
@@ -350,7 +350,7 @@ FST_SNPS <- fst$FstSNP # Fst per SNP
 #Cluster Analysis
 #=======================================================================================================================================#
 
-#To perform cluster analysis on the n×nn×n matrix of genome-wide IBS pairwise distances, and determine the groups by a permutation score
+#To perform cluster analysis on the nÃ—nnÃ—n matrix of genome-wide IBS pairwise distances, and determine the groups by a permutation score
 set.seed(100)
 ibs.hc <- snpgdsHCluster(ibs)
 
@@ -371,7 +371,7 @@ dev.off()
 
 #### With dissimilarity matrix
 
-#To perform cluster analysis on the n×nn×n matrix of genome-wide IBS pairwise distances, and determine the groups by a permutation score
+#To perform cluster analysis on the nÃ—nnÃ—n matrix of genome-wide IBS pairwise distances, and determine the groups by a permutation score
 set.seed(100)
 diss.hc <- snpgdsHCluster(diss)
 
