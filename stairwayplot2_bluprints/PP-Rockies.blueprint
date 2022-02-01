@@ -1,0 +1,25 @@
+#example blueprint file
+#input setting
+popid: R_fold # id of the population (no white space)
+nseq: 40 # number of sequences
+L: 1013602970 # total number of observed nucleic sites, including polymorphic and monomorphic
+whether_folded: true # whethr the SFS is folded (true or false)
+SFS: 13195530.536483 3311713.733427 2199267.610751 1691701.887762 1374632.401257 1170751.800105 984414.364639 872966.043841 779992.714058 704801.619717 641208.773207 586829.025293 546776.664732 514467.534154 488255.947162 481525.459645 457811.050724 381299.550312 323813.262252 422435.741265 # snp frequency spectrum: number of singleton, number of doubleton, etc. (separated by white space)
+#smallest_size_of_SFS_bin_used_for_estimation: 1 # default is 1; to ignore singletons, uncomment this line and change this number to 2
+#largest_size_of_SFS_bin_used_for_estimation: 15 # default is nseq/2 for folded SFS
+pct_training: 0.67 # percentage of sites for training
+nrand: 8	20	27	36 # number of random break points for each try (separated by white space)
+project_dir: R_fold # project directory
+stairway_plot_dir: /home/lmoreira/Picoides_pubescens/SNP_calling_from_pseudochrom/stairway2/stairway_plot_v2.1.1/stairway_plot_es # directory to the stairway plot files
+ninput: 200 # number of input files to be created for each estimation
+#random_seed: 6
+#output setting
+mu: 2.42e-9 # assumed mutation rate per site per generation
+year_per_generation: 1 # assumed generation time (in years)
+#plot setting
+plot_title: Rockies # title of the plot
+xrange: 4,2000 # Time (1k year) range; format: xmin,xmax; "0,0" for default
+yrange: 20,20000 # Ne (1k individual) range; format: xmin,xmax; "0,0" for default
+xspacing: 2 # X axis spacing
+yspacing: 2 # Y axis spacing
+fontsize: 12 # Font size
