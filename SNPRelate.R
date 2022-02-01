@@ -6,7 +6,7 @@
 library(gdsfmt)
 library(SNPRelate)
 
-#snpgdsVCF2GDS("SNP-only.vcf", "Picoides_pubescens-raw.gds", method="biallelic.only")
+snpgdsVCF2GDS("SNP-only.vcf", "Picoides_pubescens-raw.gds", method="biallelic.only")
 
 snpgdsSummary("Picoides_pubescens-raw.gds")
 
@@ -73,7 +73,7 @@ for(i in samples){
 }
 
 #=============================================================================================================#
-#LD-based SNP pruning
+# LD-based SNP pruning
 #   Recursively removes SNPs within a sliding window
 #=============================================================================================================#
 
@@ -92,7 +92,7 @@ snpset.id <- unlist(snpset_25)
 snpset.id <- unlist(readRDS("PP-snpset_25.rds"))
 
 #=============================================================================================================#
-#Principal Component Analysis (PCA)
+# Principal Component Analysis (PCA)
 #   Recursively removes SNPs within a sliding window
 #=============================================================================================================#
 
@@ -235,7 +235,7 @@ DIST = dist(tab2)
 write.csv(as.matrix(DIST),"PCA_dist.csv")
 
 #=============================================================================================================#
-#Estimating IBD Using PLINK method of moments (MoM)
+# Estimating IBD Using PLINK method of moments (MoM)
 #   Calculate three IBD coefficients for non-inbred individual pairs by PLINK method of moment (MoM)
 #=============================================================================================================#
 
@@ -254,7 +254,7 @@ plot(ibd.coeff$k0, ibd.coeff$k1, xlim=c(0,1), ylim=c(0,1),
 lines(c(0,1), c(1,0), col="red", lty=2)
 
 #=====================================================================================================================#
-#Estimating IBD Using Maximum Likelihood Estimation (MLE)
+# Estimating IBD Using Maximum Likelihood Estimation (MLE)
 #   Calculate the three IBD coefficients (k0, k1, k2) for non-inbred individual pairs by Maximum Likelihood Estimation
 #=====================================================================================================================#
 
@@ -268,7 +268,7 @@ plot(ibd.coeff$k0, ibd.coeff$k1, xlim=c(0,1), ylim=c(0,1),
 lines(c(0,1), c(1,0), col="red", lty=2)
 
 #=====================================================================================================================#
-#Relationship inference Using KING method of moments
+# Relationship inference Using KING method of moments
 #   Calculate IBD coefficients by KING method of moment.
 #=====================================================================================================================#
 
@@ -281,7 +281,7 @@ plot(dat$IBS0, dat$kinship, xlab="Proportion of Zero IBS",
      ylab="Estimated Kinship Coefficient (KING-robust)")
 
 #=======================================================================================================================================#
-#Identity-By-State Analysis
+# Identity-By-State Analysis
 #   For the nn individuals in a sample, snpgdsIBS() can be used to create a n×nn×n matrix of genome-wide average IBS pairwise identities
 #=======================================================================================================================================#
 
@@ -308,7 +308,7 @@ plot(x, y, col=race, xlab = "", ylab = "",
 legend("bottomright", legend=levels(race), text.col=1:nlevels(race),cex = 0.5)
 
 #=======================================================================================================================================#
-#Dissimilarity matrix
+# Dissimilarity matrix
 #=======================================================================================================================================#
 
 ibs.diss <- matrix(1,70,70)-(as.matrix(ibs$ibs))
@@ -334,7 +334,7 @@ ibs.diss_2 <- diss$diss
 mantel.randtest(as.dist(ibs.diss),as.dist(ibs.diss_2))
 
 #=======================================================================================================================================#
-#FST Estimation
+# FST Estimation
 #   Given two or more populations, FstFst can be estimated by the method of Weir & Cockerham (1984).
 #=======================================================================================================================================#
 
@@ -347,7 +347,7 @@ Mean_FST <- fst$MeanFst # Mean Fst across SNPs
 FST_SNPS <- fst$FstSNP # Fst per SNP
 
 #=======================================================================================================================================#
-#Cluster Analysis
+# Cluster Analysis
 #=======================================================================================================================================#
 
 #To perform cluster analysis on the n×nn×n matrix of genome-wide IBS pairwise distances, and determine the groups by a permutation score
