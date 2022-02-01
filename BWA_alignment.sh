@@ -115,7 +115,7 @@ echo
 echo	
 
 mkdir tmp
-time java -jar ~/programs/picard/picard.jar SortSam \
+java -jar ~/programs/picard/picard.jar SortSam \
 INPUT=BAM_files/$name.sam \
 OUTPUT=BAM_files/$name.bam \
 SORT_ORDER=coordinate \
@@ -129,7 +129,7 @@ echo Adding Read Group
 echo
 echo
 
-time java -jar ~/programs/picard/picard.jar AddOrReplaceReadGroups \
+java -jar ~/programs/picard/picard.jar AddOrReplaceReadGroups \
 I=BAM_files/$name.bam \
 O=BAM_files/$name.groups_added.bam \
 RGID=$ID \
@@ -145,7 +145,7 @@ echo Deduplication
 echo
 echo
 
-time java -jar ~/programs/picard/picard.jar MarkDuplicates \
+java -jar ~/programs/picard/picard.jar MarkDuplicates \
 TMP_DIR=tmp \
 INPUT=BAM_files/$name.groups_added.bam \
 OUTPUT=BAM_files/$name.dedup.bam \
@@ -177,7 +177,7 @@ echo Collect Insert Size Metrics
 echo
 echo
 
-time java -jar ~/programs/picard/picard.jar CollectInsertSizeMetrics \
+java -jar ~/programs/picard/picard.jar CollectInsertSizeMetrics \
 INPUT=BAM_files/$name.dedup.bam \
 OUTPUT=Stats/$name.insert_metrics.txt \
 HISTOGRAM_FILE=Stats/$name.insert_size_histogram.pdf
@@ -200,7 +200,7 @@ echo Indexing BAM
 echo
 echo
 
-time java -jar ~/programs/picard/picard.jar BuildBamIndex \
+java -jar ~/programs/picard/picard.jar BuildBamIndex \
 I=BAM_files/$name.dedup.bam
 
 echo
