@@ -18,4 +18,5 @@ echo $PATH
 #par = prefix
 #num - number of iterations
 
+# run_fsc.sh can be found at https://github.com/isaacovercast/fsc2_scripts/blob/master/run_fsc.sh
 ./run_fsc.sh -p $par -n $num -m > out.log
