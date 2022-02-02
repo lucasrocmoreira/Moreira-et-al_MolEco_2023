@@ -62,7 +62,7 @@ Code used for analyses in Moreira et al. 2022:
 
 ### Natural selection and genetic load
 
-* `Genetic load.R`: polarizes SNPs in .gene format and computes genetic load metrics.
+* `Genetic load.R`: polarizes SNPs in .geno format and computes genetic load metrics.
 
 * `JustOrthlog_processing.R`: processes outputs from [JustOrthologs](https://github.com/ridgelab/JustOrthologs).
 
