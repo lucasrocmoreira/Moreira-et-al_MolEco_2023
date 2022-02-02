@@ -4,7 +4,6 @@
 #PBS -N PopLDdecay
 #PBS -j oe
 #PBS -m ae
-#PBS -M lmoreira@amnh.org
 #PBS -k oe
 
 # change to the working directory
