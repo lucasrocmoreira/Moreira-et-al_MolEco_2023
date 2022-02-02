@@ -14,7 +14,7 @@ EXECDIR=`pwd`
 export PATH=./:$PATH
 echo $PATH
 
-# This fo loop calculated FST across all pairwise comparisons
+# This for loop calculates FST across all pairwise comparisons
 for i in /home/lmoreira/Picoides_pubescens/SNP_calling_from_pseudochrom/ANGSD/SAF/*saf.idx;
 do
 	for j in /home/lmoreira/Picoides_pubescens/SNP_calling_from_pseudochrom/ANGSD/SAF/*saf.idx;
