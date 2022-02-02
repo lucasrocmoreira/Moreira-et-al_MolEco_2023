@@ -31,7 +31,7 @@ for(i in 1:length(chromos)){
     where_are_genes <- data.frame(chr,whole_seq,gene_present)
     
     print(paste0("Starting locating CDS in chromosome ",chr))
-    # all bp that are part of a gene get a 1, otherwise 0
+    # all bp that is part of a gene gets a 1, otherwise 0
     for(feature in 1:nrow(sub_data)){
       print(paste0(feature," of ",nrow(sub_data)," CDS"))
       start_ <- sub_data$start[feature]
