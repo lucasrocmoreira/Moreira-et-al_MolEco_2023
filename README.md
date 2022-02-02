@@ -46,8 +46,24 @@ Code used for analyses in Moreira et al. 2022:
 
 * `ANGSD_Theta.sh`: estimates genetic diversity (theta) using [ANGSD](http://www.popgen.dk/angsd/index.php/ANGSD).
 
+* `ReLERNN.sh`: estimates per-base recombination rates using [ReLERNN](https://github.com/kr-colab/ReLERNN).
+
 * `PopLDdecay.sh`: estimates linkage decay with [PopLDdecay](https://github.com/BGI-shenzhen/PopLDdecay).
 
 ### Genomic predictors of regional variation in nucleotide diversity
 
+* `GC_content.R`: computes GC content along the genome using the R package [seqinr](https://cran.r-project.org/web/packages/seqinr/index.html).
+
+* `Gene_density.R`: computes gene density along the genome.
+
+* `Recombination-vs-theta.R`: computes weighted recombination rates along windows matching theta estimates.
+
+* `Genomic_predictors.R`: statistical models for predictors of genomic diversity.
+
 ### Natural selection and genetic load
+
+* `Genetic load.R`: polarizes SNPs in .gene format and computes genetic load metrics.
+
+* `JustOrthlog_processing.R`: processes outputs from [JustOrthologs](https://github.com/ridgelab/JustOrthologs).
+
+* `PAML_codeml_dnds.py`: estimates dS/dN ratio along the branches of a tree using [PAML](http://abacus.gene.ucl.ac.uk/software/paml.html).
