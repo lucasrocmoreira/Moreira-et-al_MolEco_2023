@@ -252,7 +252,7 @@ High_recessive <- read.csv("High_recessive.csv",header = T)
 Moderate_additive <- read.csv("Moderate_recessive.csv",header = T)
 Low_recessive <- read.csv("Low_recessive.csv",header = T)
 
-# Let's calculate the ration high/low
+# Let's calculate the ratio high/low
 
 High.Low.RATIO <- High_recessive$Count.ratio/Low_recessive$Count.ratio
 High.Low.RATIO <- data.frame(Species=High_recessive$Species,Pop=High_recessive$Pop,H.L.recessive.Ratio=High.Low.RATIO)
