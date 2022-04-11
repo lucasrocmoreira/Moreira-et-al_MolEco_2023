@@ -66,4 +66,4 @@ Code used for analyses in Moreira et al. 2022:
 
 * `JustOrthlog_processing.R`: processes outputs from [JustOrthologs](https://github.com/ridgelab/JustOrthologs).
 
-* `PAML_codeml_dnds.py`: estimates dS/dN ratio along the branches of a tree using [PAML](http://abacus.gene.ucl.ac.uk/software/paml.html).
+* `PAML_codeml_dnds.py`: estimates dN/dS ratio along the branches of a tree using [PAML](http://abacus.gene.ucl.ac.uk/software/paml.html).
