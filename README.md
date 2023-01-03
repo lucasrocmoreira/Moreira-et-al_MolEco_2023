@@ -1,6 +1,6 @@
 # Code from: Demography and linked selection interact to shape the genomic landscape of codistributed woodpeckers during the Ice Age
 
-Code used for analyses in Moreira et al. 2022:
+Code used for analyses in Moreira et al. 2023:
 
 ### Read alignment, variant calling, and filtering
 
